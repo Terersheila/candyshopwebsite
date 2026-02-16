@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milkshakes - Candylicious Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Milkshakes</h1>
+    <nav>
+      <button onclick="navigateTo('index.html')">Home</button>
+      <button onclick="navigateTo('about.html')">About</button>
+      <button onclick="openLocation()">Location</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/image7.jpeg" alt="Vanilla milkshake" width="300">
+        <h3>Vanilla Milkshake</h3>
+        <p>Ksh 350</p>
+        <button onclick="checkout(350, 'Vanilla Milkshake')">Buy Now (M-Pesa)</button>
+      </div>
+      <div class="product-card">
+        <img src="images/image8.jpeg" alt="Strawberry milkshake" width="300">
+        <h3>Strawberry Milkshake</h3>
+        <p>Ksh 350</p>
+        <button onclick="checkout(350, 'Strawberry Milkshake')">Buy Now (M-Pesa)</button>
+      </div>
+      <div class="product-card">
+        <img src="images/image9.jpeg" alt="Oreo milkshake" width="300">
+        <h3>Oreo Milkshake</h3>
+        <p>Ksh 350</p>
+        <button onclick="checkout(350, 'Oreo Milkshake')">Buy Now (M-Pesa)</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Candylicious Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

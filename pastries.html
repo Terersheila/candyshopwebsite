@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Pastries - Candylicious Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sweet Pastries</h1>
+        <nav>
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('about.html')">About Us</button>
+            <button onclick="openLocation()">Location</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Delicious Pastries Just for You!</h2>
+        <p>Explore our wide variety of sweet pastries, freshly baked every day.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/image1.jpeg" alt="Chocolate Croissant" width="300">
+                <h3>Chocolate Croissant</h3>
+                <p>Ksh 350</p>
+                <button onclick="checkout(350, 'Chocolate Croissant')">Buy Now (M-Pesa)</button>
+            </div>
+            <div class="product-card">
+                <img src="images/image2.jpeg" alt="English Muffins" width="300">
+                <h3>English Muffins</h3>
+                <p>Ksh 250</p>
+                <button onclick="checkout(250, 'English Muffins')">Buy Now (M-Pesa)</button>
+            </div>
+            <div class="product-card">
+                <img src="images/image3.jpeg" alt="Greek baklava" width="300">
+                <h3>Greek Baklava</h3>
+                <p>Ksh 300</p>
+                <button onclick="checkout(300, 'Greek Baklava')">Buy Now (M-Pesa)</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Candylicious Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
